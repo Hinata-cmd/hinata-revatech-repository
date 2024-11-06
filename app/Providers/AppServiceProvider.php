@@ -7,9 +7,14 @@ use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
-    public function boot(): void
+    public function register(): void
     {
         Paginator::useBootstrap();
+    }
+    
+    public function boot(): void
+    {
+        //
     }
 }
 ?>
